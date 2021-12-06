@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 80%;
+    margin: 10vh auto;
+}
+.top{
+    display: flex;
+}
+.users,.reviews{
+    flex: 0 1 50%;
+
+}
+.c2{
+    margin-top: 30px;
+}
+.c3{
+    margin-top:60px;
+}
+.users{
+    height:fit-content
+}
+.reviews{
+    padding-top:8%;
+    height: fit-content
+}
+.users h1{
+    font-size: 60px;
+    color: #701938;
+    line-height: 50px;
+}
+.users p{
+    font-family: sans-serif;
+    line-height: 20px;
+}
+.reviews div{
+    width: 70%;
+    display: flex;
+    background-color: #f3c8d7;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin: auto;
+    margin-bottom:2%;
+    border-radius: 15px;
+}
+.review2{
+    margin-left: 23% !important;
+}
+.review3{
+    margin-left: 30% !important;
+}
+i{
+    color: orange;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card{
+    flex-basis: 30%;
+    background-color:#701938 ;
+    gap:5%;
+    height:fit-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+.prof{
+   display: flex;
+   align-self: flex-start;
+}       
+.pic{
+   align-self: center;
+   background-color: black;
+   border-radius: 50%;
+ height: 50px;
+ width: 50px;
+
+}
+.prof-details{
+   margin: auto 20px; 
+}
+.bottom .card h4{
+   color: #fff;
+   font-family: poppins;
+}
+.card p{
+color: #fff;
+   font-family: poppins;
+}
+.bottom .card p{
+line-height: 18px;
+
+}
+.buyer{
+   color:#d12f68 ;
+}
+@media (max-width:850px){
+    .c1,.c2,.c3{
+        margin-top: 0;
+    }
+}
+@media (max-width:400px) {
+   .top,.bottom{
+       width: 95%;
+       flex-direction: column;
+   }
+   .bottom .card{
+       margin-bottom:2%;
+       flex-basis:40% !important;
+   }
+}
+@media (min-width:400px) and (max-width:855px){
+   
+
+   .top{
+       flex-direction: column;
+   }
+   .bottom{
+       flex-direction: column;
+   }
+   .bottom .card{
+       margin-bottom:2%;
+       flex-basis:40% !important;
+   }
+}
+@media (max-width:300px){
+   .reviews h4,.fas{
+       font-size: 4vw;
+   }
+}

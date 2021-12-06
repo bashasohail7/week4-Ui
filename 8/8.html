@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="8.css">
+</head>
+<body>
+    <center>
+        <h1>SPLI <BR>TIER</BR></h1>
+    <div class="main">
+        <div class="input">
+            <label >Bill</label>
+            <div class="input-icons">
+                <i class="fa fa-rupee-sign icon"></i>
+                <input class="input-field " id="bill" type="number">
+            </div>
+            <label >Select Tip % </label>
+
+            <div class="tip" id="tip">
+                <button>5%</button>
+                <button>10%</button>
+                <button>15%</button>
+                <button>25%</button>
+                <button>50%</button>
+                <button>Custom</button>
+            </div>
+            <label>Number of People</label>
+            <div class="input-icons">
+                <i class="fa fa-users icon"></i>
+                <input class="input-field" id="person" type="number">
+            </div>
+
+        </div>
+        <div class="output">
+            <div class="res">
+                <h4>Tip Amount <br>
+                    <span>/ person</span></h4>
+                    <h2 id="tipper"><label class="rs" >Rs.</label></h2>
+            </div>
+            <div class="res">
+                <h4>Total  <br>
+                    <span>/ person</span></h4>
+                    <h2 id="totalper"><label class="rs" >Rs.</label></h2>
+            </div>
+            <button onclick="reset()">RESET</button>
+
+        </div>
+        </div>
+
+
+    </center>
+    <script src="8.js"></script>
+
+    
+
+    
+</body>
+</html>

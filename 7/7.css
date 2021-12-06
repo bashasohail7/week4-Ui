@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    position: relative;
+    background-image: url("shootingstar\ \(2\).jpg");
+   background-repeat: no-repeat;
+   background-size:auto;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+   background-position:center
+}
+.title{
+    margin-top:15vh;
+    color: white;
+    letter-spacing: 7px;
+    word-spacing: 10px;
+}
+.time{
+    margin-top: 5%;
+}
+.timeunits{
+    margin-top:-1%
+}
+.time,.timeunits{
+    display: flex;
+    width:25vw;
+    height: 25%;
+    justify-content: space-between;
+}
+.time div,.timeunits div{
+    width: 23%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(52, 46, 58) 50%, rgba(63, 62, 62, 0.89)50%);
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timeunits div{
+    background: transparent !important;
+    color: rgb(190, 185, 176);
+    font-weight: bolder;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+#hr,#min,#day,#sec{
+    font-size: 40px;
+}
+.time h1{
+    font-size: 50px;
+    background: -webkit-linear-gradient(rgb(231, 34, 110) 50%, rgb(201, 115, 144) 50%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(65, 40, 70);
+    width: 100vw;
+    height:150px !important;
+    margin-left:-1%;           
+     margin-top: auto !important;
+     /* footer design */
+    clip-path: polygon(40% 25%, 45% 1%, 100% 25%, 100% 100%, 0 100%, 0 31%, 13% 0);
+}
+.footer a{
+    color: whitesmoke !important;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+          @media (min-width:800px) and (max-width:1050px){
+            .time,.timeunits{
+                 width: 35% ;
+                }
+          }
+          @media (min-width:600px) and (max-width:799px){
+             
+                .time,.timeunits{
+                width: 45% ;
+                }
+          }
+          @media (max-width:599px){
+            .time,.timeunits{
+                width: 70% ;
+                }
+          }
+          @media (max-width:399px){
+            .time,.timeunits{
+                width: 90% ;
+                }
+          }
+          @media (max-width:300px){
+              .time #hr{
+                  font-size: 100px !important;
+              }
+              .time{
+                  background-color: darkmagenta;
+              }
+          }

@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(7, 177, 177);
+}
+.card{
+    width: 400px;
+   min-height: 65%;
+    margin-left: 15%;
+    margin-top: 10%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px grey;
+}
+.top{
+    position: relative;
+    border-radius: 15px 15px 0 0;
+height: 120px;
+background-image: url("https://digitshack.com/codepen/mentor4/bg-pattern-card.svg");
+}
+.profile{
+    position: absolute;
+    top: 80px;
+    left: 160px;
+    
+}
+.profile img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border:2px solid white
+}
+
+.bottom{
+    height: 240px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px ;
+}
+.profile-details{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.age,.location{
+color: darkgrey;
+}
+.location{
+    margin-top: 10px;
+}
+.foot-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+.top-circle{
+    position: absolute;
+    /* make top arc look under card */
+    z-index: -1;
+    top: 0;left: 0;
+    clip-path: circle(50% at 0 0);
+    background-color: rgb(94, 189, 192);
+    height: 700px;
+    width: 700px;
+}
+.bottom-circle{
+    position: absolute;
+    z-index: -1;
+    bottom:0;right: 0;
+    clip-path: circle(50% at 94% 100%);
+    background-color: rgb(94, 189, 192);
+    height: 700px;
+    width: 700px;
+}
+@media (max-width:700px){
+    .bottom-circle{
+        height: 0;width: 0;
+    }
+}

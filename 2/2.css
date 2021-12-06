@@ -1,0 +1,157 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+p{
+  font-size:   11.5px
+}
+h3{
+    font-style: 28px;
+}
+body{
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    align-items: center;
+}
+.right{
+    width: 15% ;
+    margin-top:10vh;
+    background-color: #fff;
+    padding:10px 20px;
+   box-shadow: 7px 7px 15px grey;
+    border-radius: 10px;
+    overflow-y:scroll
+}
+.left{
+    margin-top:5%;
+    width: 64%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left #one,#two,#three,#four{
+border-radius: 20px;
+padding: 7px 20px;
+}
+#one,#two,#four{
+    color: #fff;
+}
+
+#one{
+    background-color: rgb(138, 24, 138);
+    width: 64%;
+    min-height: 49%;
+    margin-bottom: 2%;
+}
+#two{
+    background-color: rgb(80, 80, 80);
+    width: 34%;
+    height: 49%;
+    margin-bottom: 2%;
+
+}
+#three{
+    background-color: #fff;
+    width: 34%;
+    height: 49%;
+    box-shadow: 5px 10px 10px grey;
+    color: rgb(37, 35, 35);
+}
+#four{
+    background-color: rgb(0, 5, 36);
+    width: 64%;
+    min-height: 49%;
+    box-shadow: 5px 10px 10px grey;
+}
+.profile{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+
+}
+.name label{
+    font-size: 10px;
+    margin-top: 0px !important;
+}
+h5{
+    line-height: 20px;
+}
+.dp{
+    height: 30px;width: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+.name span{
+    line-height: 0;
+    font-size: 10px;
+}
+
+.dpL{
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 15px;
+    background-color: blanchedalmond;
+}
+#three .dpL{
+    background-color: rgb(22, 22, 21);
+
+}
+.profile{
+    margin-bottom: -5%;
+}
+#one .profile {
+    position: relative;
+}
+/* making of quote as per given UI */
+.quote{
+    position: absolute;
+    top: 0;
+    left: 70%;
+    color: rgba(235, 232, 231, 0.24);
+    font-size:10vw
+}
+@media (min-width:850px) and (max-width:950px){
+    .right{
+      width: 20%;
+    }
+    .left{
+      width: 69%;
+    }
+}
+@media (max-width:850px) {
+    body{
+        flex-direction: column;
+    }
+    .left{
+        width: 90% !important;
+    }
+    .right{
+        width: 70%;
+    }
+}
+@media (max-width:576px) {
+    body{
+        flex-direction: column;
+    }
+    .left{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .left #one,#two,#three,#four{
+        width: 90%;
+    }
+    #three{
+        margin-bottom: 3%;
+    }
+    #four{
+        margin-bottom: -7%;
+    }
+    .right{
+        width: 80%;
+    }
+   
+}

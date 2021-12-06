@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(214, 209, 209);
+}
+.free{
+    margin-left: auto;
+    width: fit-content;
+    border-radius: 40px;
+    background-color: rgb(146, 169, 218);
+    padding: 0px 30px;
+    display: grid;
+    align-items: center;
+}
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+
+.switch input { 
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #670794;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color:rgb(202, 200, 200);
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #670794;
+}
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+.slider.round {
+border-radius: 34px;
+}
+.slider.round:before {
+border-radius: 50%;
+}
+.model{
+width: 250px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.model h4{
+width: 33%;
+}
+.model label{
+width: 30%;
+}
+.price div span{
+    font-size: 30px;
+    font-weight:bolder;
+    position: relative;
+    bottom: 15px;
+}
+.free h1{
+   color: rgb(10, 1, 90);
+}
+.main{
+    margin-top:-5%;
+    width: 75%;
+
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.price div{
+    width: 32%;
+    height: fit-content;
+    padding-bottom:5% !important;
+    background-color: white;
+    border-radius: 15px;
+    /* justify-content: center; */
+    align-items: center;
+    box-shadow:  -10px 10px 30px #2523235b,
+}
+.price div h1{
+    font-size: 60px;
+}
+.price div button{
+    width: 90%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgba(126, 119, 131, 0.55) 30%, rgba(56, 5, 97, 0.89))
+}
+.price div:hover{
+    margin-top: -2.5vh;
+    width: 35%;
+    height: 78vh;
+     color: white;
+    background: linear-gradient( 45deg, rgba(131, 49, 185, 0.55) 30%, rgba(56, 5, 97, 0.89))
+}
+.price div:hover button{
+    color: rgb(111, 17, 199);font-weight: bold;
+    background: linear-gradient(to right, rgba(247, 245, 248, 1) 30%, rgba(250, 248, 252, 1))
+
+}
+@media (min-width:850px) and (max-width:930px){
+}
+@media (min-width:800px) and (max-width:850px){
+    .main{
+        width: 90% ;
+    }
+}
+@media (min-width:600px) and (max-width:800px){
+    .main{
+        width: 90%;
+    }
+    .price{
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+    .price div{
+        width: 48% !important;
+        margin-bottom: 7%;
+    }
+}
+@media (max-width:599px){
+    .model{
+        width: 250px;
+        padding: 20px;
+    }
+    .free{
+        width: 20vw;
+        justify-content: center;
+        font-size: 2vw;
+    }
+    .main{
+        width: 75%;
+    }
+    .price{
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+    .price div{
+        width: 100% !important;
+        margin-bottom: 7%;
+    }
+
+}
+@media  (min-width:200px) and (max-width:300px){
+   .price h1{
+        font-size: 10vw;
+    }
+    .main{
+        width: 90%;
+    }
+}
+@media (max-width:250px){
+    .model h4{
+        font-size: 8vw;
+    }
+}

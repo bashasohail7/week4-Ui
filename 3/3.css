@@ -1,0 +1,212 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(9, 9, 10);
+}
+.main{
+    height:70vh;
+    width: 80vw;
+    display: flex; 
+    justify-content:space-between;
+    align-items: center;
+}
+.profile{
+    height:100%;
+    width: 20%;
+}
+.profile-details{
+    background-color: rgb(31, 62, 235);
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    padding-top: 5%;
+    padding-left: 15%;
+    height: fit-content;
+}
+.profile-details h1{
+    font-size: 45px;
+}
+.duration{
+    position: relative;
+    /* to make look icons under  */
+    z-index: -1;
+    margin-top: -23%;
+    height: 40%;
+    background-color: rgb(43, 25, 43);
+    padding-top: 10%;
+    padding-left: 10px;
+    color: rgb(87, 86, 86);
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}
+.details{
+    width: 78%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.details div{
+    height: 48%;
+    width: 32%;
+}
+
+.details div .cat{
+    height: 25%;
+    width: 100%;
+    border-radius: 10px;
+}
+.details div .duration-details{
+   margin-top:-5.88%;
+    width: 100%;
+    border-radius: 10px;
+    font-family: sans-serif;
+    padding-top:5%;
+    padding-left:5%;
+    position: relative;
+    z-index: 2;
+    height: 80%;
+    color: rgb(230, 220, 220);
+    background-color: rgb(43, 25, 43);
+
+}
+.work{
+    background-color: #ffa452;
+}
+.play{
+    background-color: rgb(81, 207, 207);
+}
+.study{
+    background-color: rgb(241, 54, 54);
+}
+.exercise{
+background-color: rgb(85, 187, 85);
+}
+.social{
+background-color: rgb(126, 50, 126);
+}
+.selfcare{
+background-color: rgb(236, 236, 45);
+}
+.cat i{
+    font-size: 60px;
+    margin-left:70%;
+    transform: rotateZ(45deg);
+    color: rgba(51, 46, 46, 0.315);
+}
+@media (min-width:850px)and (max-width:1050px){
+    .main{
+        width: 90%;
+        height: 90%;
+    }
+    .profile{
+        width: 25%;
+        height: 75%;
+    }
+    .details{
+        width: 73%;
+    }
+}
+@media (min-width:600px) and (max-width:850px){
+    .main{
+        width: 95%;
+    }
+    .profile-details h1{
+        font-size: 45px;
+    }
+    .profile{
+        width:30%;
+    }
+    .duration{
+        height: 180px;
+    }
+    .details{
+        width: 68%;
+    }
+    .cat{
+        height: 10% !important;
+    }
+  .details-card{
+      margin-bottom: -2%;
+  }
+    .details div{
+        width: 48%;
+        height: 70%;
+    }
+    i{
+        font-size: 40px !important;
+    }
+}
+@media  (max-width:600px){
+       .profile{
+           width: 70%;
+           margin-left: 15%;
+           margin-bottom: 75px;
+       }
+       .profile-details{
+           height: fit-content !important;
+           padding-right: 5%;
+       }
+    .duration{
+        height: 100px;
+        margin-bottom: 1000px;
+    }
+    .main{
+        display: block;
+width:95%  !important;
+}
+    
+    .duration{
+        height: 180px;
+    }
+.details{
+width: 80%;
+}
+.details-card{
+margin-bottom: 20px !important;
+
+}
+.details div{
+margin-left: 10%;
+width: 100%;
+}
+   i{
+       margin-left: 70% !important;
+       font-size: 50px !important;
+   } 
+}
+@media (max-width:380px){
+    .profile{
+        width: 95%;
+        margin-left: 2.5% !important;
+        margin-bottom: -20px;
+    }
+    .profile h1{
+        font-size: 9vw;
+    }
+    .details{
+        width: 95%;
+        margin-left: -10%;
+    
+    }
+    .details-card{
+        margin-bottom: 20px !important;
+    }
+    .duration-details h4{
+        font-size:4vw ;
+    }
+    .duration-details h1{
+        font-size:7vw ;
+    }
+    .duration-details p{
+        font-size: 3vw;
+    }
+}
